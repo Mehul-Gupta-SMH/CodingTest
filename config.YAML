@@ -1,0 +1,29 @@
+structured:
+  connection_str:
+    host: localhost
+    username: postgres
+    password: admin
+    dbname: postgres
+    schema: public
+
+  source_table: snippets
+  batch_size: 2000
+
+  destination_table: snippets_DWH
+
+
+
+json:
+  connection_str:
+    host: localhost
+    username: postgres
+    password: admin
+    dbname: postgres
+    schema: public
+
+
+  batch_size: 10000
+
+  destination_table: CustReviews_DWH
+
+  max_concurrent_jobs: 4
